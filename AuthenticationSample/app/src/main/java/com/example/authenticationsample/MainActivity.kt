@@ -1,5 +1,6 @@
 package com.example.authenticationsample
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -60,7 +61,8 @@ class MainActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this){task ->
                 if (task.isSuccessful) {
-                    Toast.makeText(this, "Login Success", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this, NextActivity::class.java)
+                    startActivity(intent)
                 } else {
                     Toast.makeText(this, "Login Failure", Toast.LENGTH_SHORT).show()
                 }

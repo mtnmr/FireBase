@@ -4,4 +4,8 @@
     <string name="password_hint">password</string>
     <string name="sign_up_text">sign up</string>
     <string name="login_text">login</string>
+    <string name="hello_text">Hello!</string>
+    <string name="current_username">username: %s</string>
+    <string name="current_email">email: %s</string>
+    <string name="current_uid">uid: %s</string>
 </resources>
