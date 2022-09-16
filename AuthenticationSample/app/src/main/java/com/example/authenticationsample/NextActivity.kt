@@ -1,5 +1,6 @@
 package com.example.authenticationsample
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -32,6 +33,12 @@ class NextActivity : AppCompatActivity() {
                     Toast.makeText(this, "email send", Toast.LENGTH_SHORT).show()
                 }
             }
+        }
+
+        binding.userSignoutButton.setOnClickListener {
+            Firebase.auth.signOut()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
 }

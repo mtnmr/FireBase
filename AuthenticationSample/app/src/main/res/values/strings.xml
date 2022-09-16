@@ -9,4 +9,5 @@
     <string name="current_email">email: %s</string>
     <string name="current_uid">uid: %s</string>
     <string name="send_email">send email</string>
+    <string name="sing_out">Sing Out</string>
 </resources>

@@ -9,37 +9,45 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
         android:orientation="vertical"
-        android:gravity="center">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/hello_text"/>
+            android:text="@string/hello_text" />
 
         <TextView
             android:id="@+id/username"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/current_username"/>
+            android:text="@string/current_username" />
 
         <TextView
             android:id="@+id/email"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/current_email"/>
+            android:text="@string/current_email" />
 
         <TextView
             android:id="@+id/uid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/current_uid"/>
+            android:text="@string/current_uid" />
 
         <Button
             android:id="@+id/send_email_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/send_email"/>
+            android:text="@string/send_email" />
+
+        <Button
+            android:id="@+id/user_signout_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sing_out"/>
 
     </LinearLayout>
 
